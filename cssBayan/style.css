@@ -74,7 +74,7 @@ input:checked ~ .title h3 {
 
 .img__container {
   overflow: visible;
-  width: 100%;
+  width: 90%;
   display: none;
 }
 
@@ -89,6 +89,7 @@ img:active {
 }
 
 /* styles for TABLET - width fron 820px to 1.919px */
+/* tablet doesn't need hover */
 
 @media (min-width: 820px) {
 
@@ -106,7 +107,65 @@ img:active {
   }
 
   .img__container {
-    width: 80%;
+    width: 65%;
   }
 }
 
+/* styles for DESKTOP - width fron 1.920px and more */
+
+@media (min-width: 1920px) {
+
+  .container {
+    width: 50%;
+    margin: 1em auto 6em;
+    min-height: 101vh;
+  }
+
+  .container:hover .fa-plus {
+    color: #E65E6A;
+  }
+
+  .container:hover h3 {
+    color: #E65E6A;
+  }
+
+  h1 {
+    font-size: 3.6em;
+  }
+
+  h3 {
+    font-size: 1.8em;
+    line-height: 1.4em;
+    transition: color 0.3s;
+  }
+
+  .fa-plus {
+    color: transparent;
+    font-size: 1.8em;
+    transition: all 0.3s;
+  }
+
+  .meme:hover {
+    cursor: pointer;
+  }
+
+  input:hover ~ .img__container {
+    display: block;
+  }
+
+  input:checked ~ .title h3 {
+    color: #E65E6A;
+  }
+
+  input:checked~.title .fa-plus {
+    transform: rotate(45deg);
+  }
+
+  img:hover {
+    border: 0.2em solid #E65E6A;
+  }
+
+  .img__container {
+    width: 60%;
+  }
+}
