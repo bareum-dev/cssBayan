@@ -48,7 +48,7 @@ h3 {
   background-color: rgba(248, 242, 216, 0.1);
   display: block;
   width: 100%;
-  border-top: 1px solid #93A243;
+  border-top: 0.05em solid #93A243;
   padding: 0.6em;
   display: flex;
   flex-flow: column;
@@ -84,7 +84,7 @@ img {
 }
 
 img:active {
-  border: 0.2em solid #E65E6A;
+  border: 0.05em solid #E65E6A;
   box-shadow: 0 0 1em #E65E6A, 0 0 2em #E65E6A;
 }
 
