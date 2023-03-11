@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Josefin Sans', sans-serif;
+  transition: all 0.3s ease;
+}
+
+body {
+  background-color: #A7C3B7;
+}
+
+/* styles for width fron 320px to 819px */
+
+.container {
+  width: 90%;
+  margin: 1em auto 2em;
+}
+
+/* .container {
+  width: 50%;
+  margin: 1em auto 6em;
+  min-height: 101vh;
+} */
+
+/* .container:hover .fa-plus {
+  color: #E65E6A;
+}
+
+.container:hover h3 {
+  color: #E65E6A;
+} */
+
+h1 {
+  font-size: 2.2em;
+  line-height: 2em;
+}
+
+.title {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+}
+
+h3 {
+  font-size: 2em;
+  line-height: 1.4em;
+  transition: color 0.3s;
+}
+
+/* h3 {
+  font-size: 1.4em;
+  line-height: 1.4em;
+  transition: color 0.3s;
+} */
+
+
+.fa-plus {
+  color: transparent;
+  font-size: 2em;
+  transition: all 0.3s;
+}
+
+/* .fa-plus {
+  color: transparent;
+  font-size: 1.4em;
+  transition: all 0.3s;
+} */
+
+.meme {
+  background-color: rgba(248, 242, 216, 0.1);
+  display: block;
+  width: 100%;
+  border-top: 1px solid #93A243;
+  padding: 0.6em;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+/* .meme:hover {
+  cursor: pointer;
+} */
+
+input {
+  appearance: none;
+}
+
+input:checked ~ .img__container {
+  display: block;
+}
+
+/* input:hover~.img__container {
+  display: block;
+} */
+
+/* input:checked ~ .title h3 {
+  color: #E65E6A;
+} */
+
+input:checked ~ .title .fa-plus {
+  transform: rotate(45deg);
+  color: #E65E6A;
+}
+
+input:checked ~ .title h3 {
+  color: #E65E6A;
+}
+
+.img__container {
+  overflow: visible;
+  width: 100%;
+  display: none;
+}
+
+img {
+  width: 100%;
+  border: 0.2em solid transparent;
+}
+
+/* img:hover {
+  border: 0.2em solid #E65E6A;
+} */
+
+img:active {
+  border: 0.2em solid #E65E6A;
+  box-shadow: 0 0 1em #E65E6A, 0 0 2em #E65E6A;
+}
+
+
