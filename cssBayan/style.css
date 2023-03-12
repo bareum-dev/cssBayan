@@ -93,8 +93,13 @@ img:active {
 
 @media (min-width: 820px) {
 
+  body {
+    min-height: 101vh;
+  }
+
   .container {
     width: 80%;
+    box-shadow: 1em 1em 3em black;
   }
 
   h1 {
@@ -119,9 +124,9 @@ img:active {
 
 @media (min-width: 1920px) {
 
-  /* body {
-    min-height: 120vh;
-  } */
+  body {
+    min-height: 101vh;
+  }
 
   .container {
     width: 50%;
