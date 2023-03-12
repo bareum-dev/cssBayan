@@ -23,6 +23,7 @@ body {
 h1 {
   font-size: 2.2em;
   line-height: 2em;
+  margin-left: 0.4em;
 }
 
 .title {
@@ -34,7 +35,7 @@ h1 {
 }
 
 h3 {
-  font-size: 2em;
+  font-size: 1.8em;
   line-height: 1.4em;
   transition: color 0.3s;
 }
@@ -53,6 +54,8 @@ h3 {
   display: flex;
   flex-flow: column;
   align-items: center;
+  padding-left: 0.6em;
+  padding-right: 0.6em;
 }
 
 input {
@@ -102,13 +105,18 @@ img:active {
     box-shadow: 1em 1em 3em black;
   }
 
+  .meme {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+
   h1 {
     font-size: 3em;
     line-height: 2em;
   }
 
   h3 {
-    font-size: 2.4em;
+    font-size: 2em;
   }
 
   .fa-plus {
