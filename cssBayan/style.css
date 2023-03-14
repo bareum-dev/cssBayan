@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Josefin Sans', sans-serif;
+  transition: all 0.3s ease;
+}
+
+body {
+  background-color: #A7C3B7;
+}
+
+/* styles for MOBILE - width fron 320px to 819px */
+
+.container {
+  width: 90%;
+  margin: 1em auto 2em;
+  background-color: rgba(250, 250, 250, 0.2);
+}
+
+h1 {
+  font-size: 2.2em;
+  line-height: 2em;
+  margin-left: 0.4em;
+}
+
+.title {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+}
+
+h3 {
+  font-size: 1.8em;
+  line-height: 1.4em;
+  transition: color 0.3s;
+}
+
+.fa-plus {
+  font-size: 2em;
+  transition: all 0.3s;
+}
+
+.meme {
+  display: block;
+  width: 100%;
+  border-top: 0.05em solid #93A243;
+  padding: 0.6em;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  padding-left: 0.6em;
+  padding-right: 0.6em;
+}
+
+input {
+  appearance: none;
+}
+
+input:checked ~ .img__container {
+  height: auto;
+  transform: scale(1);
+  transition: all 0.4s ease;
+  /**/
+}
+
+input:checked ~ .title .fa-plus {
+  transform: rotate(45deg);
+  color: #E65E6A;
+}
+
+input:checked ~ .title h3 {
+  color: #E65E6A;
+}
+
+.img__container {
+  overflow: visible;
+  width: 90%;
+  transform: scale(0);
+  height: 0;
+  transition: all 0.4s ease;
+}
+
+img {
+  width: 100%;
+  border: 0.2em solid transparent;
+}
+
+img:active {
+  border: 0.05em solid #E65E6A;
+  box-shadow: 0 0 1em #E65E6A, 0 0 2em #E65E6A;
+}
+
+/* styles for TABLET - width fron 820px to 1.919px */
+/* tablet doesn't need hover */
+
+@media (min-width: 820px) {
+
+  body {
+    min-height: 101vh;
+  }
+
+  .container {
+    width: 80%;
+    box-shadow: 1em 1em 3em black;
+  }
+
+  .meme {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+
+  h1 {
+    font-size: 3em;
+    line-height: 2em;
+  }
+
+  h3 {
+    font-size: 2em;
+  }
+
+  .fa-plus {
+    font-size: 2.4em;
+  }
+
+  .img__container {
+    width: 65%;
+  }
+}
+
+/* styles for DESKTOP - width fron 1.920px and more */
+
+@media (min-width: 1920px) or ((min-width: 1200px) and (hover: hover)) {
+
+  body {
+    min-height: 101vh;
+  }
+
+  .container {
+    width: 50%;
+    margin: 1em auto 3em;
+    box-shadow: 1em 1em 3em black;
+  }
+
+  .container:hover .fa-plus {
+    color: #E65E6A;
+  }
+
+  .container:hover h3 {
+    color: #E65E6A;
+  }
+
+  h1 {
+    font-size: 3.6em;
+  }
+
+  h3 {
+    font-size: 1.8em;
+    line-height: 1.4em;
+    transition: color 0.3s;
+  }
+
+  .fa-plus {
+    color: transparent;
+    font-size: 1.8em;
+    transition: all 0.3s;
+  }
+
+  .meme:hover {
+    cursor: pointer;
+  }
+
+  input:hover ~ .img__container {
+    display: block;
+  }
+
+  input:checked ~ .title h3 {
+    color: #E65E6A;
+  }
+
+  input:checked~.title .fa-plus {
+    transform: rotate(45deg);
+  }
+
+  img:hover {
+    border: 0.2em solid #E65E6A;
+  }
+
+  .img__container {
+    width: 60%;
+  }
+}
