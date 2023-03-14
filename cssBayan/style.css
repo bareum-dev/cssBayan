@@ -130,7 +130,7 @@ img:active {
 
 /* styles for DESKTOP - width fron 1.920px and more */
 
-@media (min-width: 1920px) or ((min-width: 320px) and (hover: hover)) {
+@media (min-width: 1920px) or ((min-width: 1200px) and (hover: hover)) {
 
   body {
     min-height: 101vh;
